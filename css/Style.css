@@ -25,6 +25,12 @@ a {
 	text-direction: none;
 }
 
+p {
+	font-size: 16px;
+	line-height: 1.3;
+	margin: 0 0 20px;
+}
+
 ul {
 	list-style: none;
 }
@@ -72,6 +78,15 @@ section {
 	width: 50%;
 }
 
+.title30 {
+	font-size: 30px;
+	font-weight: 400;
+	color: #445161;
+	margin: 0 0 32px;
+	text-align: center;
+}
+
+
 .product__info {
 	padding-right: 20px;
 }
@@ -106,5 +121,150 @@ section {
 	align-items: center;
 	justify-content: flex-center;
 }
+
+.about__info {
+	width: 55%;
+}
+
+.about__info h2 {
+	text-align: left;
+}
+
+.about__image {
+	width: 45%;
+}
+.dignity__wrapper {
+	flex-wrap: wrap;
+}
+
+.dignity__pluses ul {
+	padding-right: 22px;
+}
+
+.dignity__pluses li {
+	margin: 0 0 16px;
+	position: relative;
+	padding-left: 42px;
+	line-height: 1.5;
+}
+
+.dignity__pluses li:before {
+	content: '';
+	width: 32px;
+	height: 32px;
+	position: absolute;
+	left: 0;
+	top: 7px;
+	background: url(../images/plus.png) no-repeat 0 0;
+	background-size: contain;
+}
+
+h4 {
+	font-size: 24px;
+	font-weight: 400;
+	text-align: left;
+	padding-bottom: 10px;
+}
+
+.scrinshots__wrapper {
+	flex-wrap: wrap;
+	justify-content: flex-between;
+}
+
+.scrinshots__image {
+	width: 40%;
+	flex-shrink: 0;
+}
+
+.scrinshots__item {
+	align-items: flex-start;
+	width: 50%;
+	
+}
+
+.scrinshots__item:nth-child(-n + 2) {
+	padding: 0 0 30px;
+}
+
+.scrinshots__discription {
+	padding: 0 16px 0;
+	font-size: 16px;
+	line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+	h4 {
+		padding-bottom: 0;
+	}
+	section {
+		padding: 30px 0;
+	}
+	.container {
+		flex-direction: column;
+	}
+	.title30 {
+		margin: 0 0 26px;
+    }
+	.col50 {
+		width: 100%;
+	}
+	.product .container {
+		flex-direction: column-reverse;
+	}
+	.product__info {
+		padding: 0;
+	}
+	.product__info h1 {
+		text-align: center;
+		font-size: 50px;
+		margin: 26px 0 20px;
+	}
+	.about__info {
+		width: 100%;
+	}
+	.about__info h2 {
+		text-align: center;
+	}
+	.about__image {
+		width: 100%;
+	}
+	.dignity__pluses {
+		display: block;
+	}
+	.dignity__pluses ul {
+		width: 100%;
+		padding-right: 0;
+	}
+	.dignity__pluses li {
+		line-height: 1.3;
+	}
+
+	.scrinshots__item:nth-child(-n + 2) {
+		padding: 0 0 10px;
+	}
+	.scrinshots__item {
+		width: 100%;
+		padding-bottom: 10px;
+	}
+	.scrinshots__image {
+		width: 30%;
+	}
+}
+
+@media (max-width: 460px) {
+	h4 {
+    text-align: center;
+	}
+	.scrinshots__item {
+		flex-direction: column;
+	}
+	.scrinshots__image {
+    width: 100%;
+    text-align: center;
+	}
+}
+
+
+
 
 
